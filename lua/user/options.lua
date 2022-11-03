@@ -72,18 +72,27 @@ vim.filetype.add({
 
 lvim.colorscheme = "tokyonight"
 lvim.log.level = "warn"
-lvim.builtin.alpha.active = true
 lvim.reload_config_on_save = false
+
+lvim.builtin.alpha.active = true
 lvim.builtin.illuminate.active = false
 lvim.builtin.bufferline.active = true
-lvim.builtin.alpha.mode = "dashboard"
+lvim.builtin.breadcrumbs.active = true
+lvim.builtin.project.active = false
 lvim.builtin.terminal.active = true
+lvim.builtin.dap.active = true
+
+lvim.builtin.alpha.mode = "dashboard"
+lvim.builtin.treesitter.highlight.enabled = true
+
+
+lvim.builtin.breadcrumbs.options.separator = "  "
+
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
-lvim.builtin.breadcrumbs.active = true
-lvim.builtin.treesitter.highlight.enabled = true
-lvim.builtin.dap.active = true
-lvim.builtin.breadcrumbs.options.separator = "  "
+lvim.builtin.nvimtree.setup.update_cwd = false
+lvim.builtin.nvimtree.setup.update_focused_file.update_cwd = false
+
 lvim.builtin.cmp.cmdline.enable = true
 lvim.builtin.cmp.cmdline.options = {
 	{
