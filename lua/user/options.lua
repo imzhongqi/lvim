@@ -82,6 +82,7 @@ lvim.builtin.project.active = false
 lvim.builtin.terminal.active = true
 lvim.builtin.dap.active = true
 
+lvim.builtin.alpha.active = false
 lvim.builtin.alpha.mode = "dashboard"
 
 lvim.builtin.treesitter.highlight.enabled = true
