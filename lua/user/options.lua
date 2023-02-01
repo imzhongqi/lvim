@@ -88,6 +88,7 @@ lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.treesitter.highlight.enabled = true
 
 lvim.builtin.breadcrumbs.options.separator = "  "
+lvim.icons.ui.ChevronRight = ""
 
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false

@@ -31,8 +31,8 @@ lvim.plugins = {
 	"simrat39/rust-tools.nvim",
 	{
 		"saecki/crates.nvim",
-		tag = "v0.3.0",
-		requires = { "nvim-lua/plenary.nvim" },
+		version = "v0.3.0",
+		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
 			require("crates").setup({
 				null_ls = {
@@ -56,7 +56,7 @@ lvim.plugins = {
 
 	{
 		"ggandor/flit.nvim",
-		requires = { "ggandor/leap.nvim" },
+		dependencies = { "ggandor/leap.nvim" },
 		config = function()
 			require("flit").setup({
 				keys = { f = "f", F = "F", t = "t", T = "T" },
@@ -71,7 +71,7 @@ lvim.plugins = {
 	},
 
 	{
-		"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+		url = "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
 		config = function()
 			require("lsp_lines").setup()
 			vim.diagnostic.config({ virtual_lines = false })
@@ -96,7 +96,7 @@ lvim.plugins = {
 		config = function()
 			require("user.noice")
 		end,
-		requires = {
+		dependencies = {
 			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
 			"MunifTanjim/nui.nvim",
 		},
